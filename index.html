@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sakshi Lokhande | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f6fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      padding: 80px 20px 70px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid rgba(255, 255, 255, 0.6);
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+
+    .hero-links {
+      font-size: 0.95rem;
+    }
+
+    .hero-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 6px;
+      font-weight: 500;
+    }
+
+    .hero-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 12px;
+    }
+
+    nav ul li {
+      margin: 0 18px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: 500;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #4f46e5;
+      border-left: 5px solid #4f46e5;
+      padding-left: 10px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      margin-bottom: 25px;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills span {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 0.9rem;
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #1e1b4b;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #a5b4fc;
+      text-decoration: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-content">
+    <img src="profile.jpeg" alt="Sakshi Lokhande" class="profile-pic" />
+
+    <h1>Sakshi Lokhande</h1>
+    <p class="subtitle">Artificial Intelligence & Data Science Engineering Student</p>
+
+    <p class="hero-links">
+      Pune, India |
+      <a href="mailto:lokhandesak1796@gmail.com">📧 Email</a> |
+      <a href="https://www.linkedin.com/in/lokhande-sakshi-59809127b" target="_blank">🔗 LinkedIn</a> |
+      <a href="https://github.com/SAKSHYY1796" target="_blank">💻 GitHub</a>
+    </p>
+  </div>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    <p>I am a motivated and detail-oriented AI & Data Science engineering student with a passion for building practical, real-world solutions. I enjoy working in collaborative environments and continuously improving my technical and problem-solving skills.</p>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <div class="card skills">
+    <span>Python</span><span>Java</span><span>C / C++</span><span>SQL</span><span>React.js</span>
+    <span>Machine Learning</span><span>Pandas</span><span>NumPy</span><span>Git</span><span>Docker</span>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Women’s Safety Jacket</h3>
+      <p>IoT-based safety jacket with sensors and emergency alert system for women safety.</p>
+    </div>
+    <div class="card">
+      <h3>Chatbot Application</h3>
+      <p>Python-based chatbot using basic NLP techniques to automate FAQs.</p>
+    </div>
+    <div class="card">
+      <h3>Crop Recommendation System</h3>
+      <p>ML-based system suggesting crops based on soil and environmental data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAINING ===== -->
+<section id="training">
+  <h2 class="section-title">Training & Courses</h2>
+  <div class="card">
+    <ul>
+      <li>Cloud Computing – IBM</li>
+      <li>DevOps – Infeanet Digital Solutions Ltd.</li>
+      <li>C & C++ – Disha Institute</li>
+      <li>SQL – QSpiders</li>
+      <li>Python – Campus Credentials</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements">
+  <h2 class="section-title">Key Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>3rd Rank – International Conference ICRTAIDS 2025</li>
+      <li>2nd Rank – National Event RITECH 2K25</li>
+      <li>Top Performer in 10th Grade and Diploma</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>📧 <strong>Email:</strong> <a href="mailto:lokhandesak1796@gmail.com">lokhandesak1796@gmail.com</a></p>
+    <p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lokhande-sakshi-59809127b" target="_blank">linkedin.com/in/lokhande-sakshi-59809127b</a></p>
+    <p>💻 <strong>GitHub:</strong> <a href="https://github.com/SAKSHYY1796" target="_blank">github.com/SAKSHYY1796</a></p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 Sakshi Lokhande | Designed with ❤️</p>
+</footer>
+
+</body>
+</html>
