@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0b0d17;
+  color: #fff;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 26px;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* TECH LOGOS */
+.tech-logos {
+  display: flex;
+  gap: 14px;
+}
+
+.tech-logos img {
+  width: 26px;
+  transition: transform 0.3s ease;
+}
+
+.tech-logos img:hover {
+  transform: scale(1.25);
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+}
+
+.typing {
+  color: #8b9cff;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero-desc {
+  color: #ccc;
+  max-width: 520px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 280px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #6a5cff, transparent 70%);
+  filter: blur(45px);
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1100px;
+  margin: 70px auto;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #8b9cff;
+  margin-bottom: 40px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.skill-card {
+  background: #11132a;
+  padding: 14px;
+  text-align: center;
+  border-radius: 14px;
+  color: #e0e7ff;
+}
+
+/* PROJECTS */
+.project-card {
+  background: #11132a;
+  padding: 28px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.project-card ul {
+  margin-top: 12px;
+  padding-left: 18px;
+  color: #ccc;
+}
+
+/* TRAINING & CERT */
+.training-card,
+.cert-card {
+  background: #11132a;
+  padding: 28px;
+  border-radius: 16px;
+}
+
+.training-card li,
+.cert-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid #1f234a;
+  color: #ccc;
+}
+
+.training-card li:last-child,
+.cert-card li:last-child {
+  border-bottom: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    padding: 20px 30px;
+  }
+}
